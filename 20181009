@@ -1,0 +1,52 @@
+root@kali:~# nmap -O 172.20.155.28
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2018-10-09 02:34 EDT
+Nmap scan report for 172.20.155.28
+Host is up (0.00092s latency).
+Not shown: 997 closed ports
+PORT	STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 08:00:27:2B:E4:43 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Microsoft Windows XP|2003
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_server_2003
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2.94 seconds
+root@kali:~# msfconsole
+                                             	 
+
+ ______________________________________________________________________________
+|                                                                            	|
+|                      	3Kom SuperHack II Logon                              	|
+|_____________________________________________________________________________|
+|                                                                            	|
+|                                                                            	|
+|                                                                            	|
+|             	User Name:      	[   security	]                           	|
+|                                                                            	|
+|             	Password:       	[           	]                           	|
+|                                                                           	|
+|                                                                            	|
+|                                                                            	|
+|                               	[ OK ]                                     	|
+|_____________________________________________________________________________|
+|                                                                            	|
+|                                                    	http://metasploit.com   |
+|_____________________________________________________________________________|
+
+
+Easy phishing: Set up email templates, landing pages and listeners
+in Metasploit Pro -- learn more on http://rapid7.com/metasploit
+
+   	=[ metasploit v4.14.10-dev                     	]
++ -- --=[ 1639 exploits - 944 auxiliary - 289 post    	]
++ -- --=[ 472 payloads - 40 encoders - 9 nops         	]
++ -- --=[ Free Metasploit Pro trial: http://r-7.co/trymsp ]
+
+msf > Interrupt: use the 'exit' command to quit
+

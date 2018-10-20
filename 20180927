@@ -14,10 +14,10 @@ int main(void)
 
 
 Question 1:#include <stdio.h>
-include 是何意義??
+include 是何意義?? 把標頭檔加入到程式碼裡面 
 stdio有何用途?
-std英文全名為何?
-i是何意義??o是何意義??
+std英文全名為何? Standard I/O
+i是何意義??o是何意義?? i 輸入 o 輸出
 h = header =標頭檔有何用途? 
 https://zh.wikipedia.org/wiki/Stdio.h
 
@@ -29,6 +29,6 @@ lib是何意義??
 https://zh.wikipedia.org/wiki/Stdlib.h
 Question 3:   system("pause");
 stdlib有何用途?
-std英文全名為何?
+std英文全名為何? Standard Library
 lib是何意義??
 https://zh.wikipedia.org/wiki/Stdlib.h

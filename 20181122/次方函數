@@ -1,0 +1,92 @@
+for 的次方函數
+
+#include <stdio.h>
+#include <stdlib.h>
+int power(int, int);
+int main(void)
+{
+	int x,n;
+	
+	printf("請輸入你要計算的次方:",(x,n));
+	scanf("%d%d",&x,&n);
+	printf("%d的%d次方是%d\n",x,n,power(x,n));
+	
+	system("pause");
+	return 0;
+}
+
+
+int power(int base, int n)
+{
+	int i,pow=1.0;
+	for(i=1;i<=n;i++)
+	{
+		pow=pow*base;
+	}
+	return pow;
+}
+
+
+
+
+while 次方函數
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	int n,g,sum,i,h,r;
+	
+	printf("請輸入你要計算的次方:");
+	scanf("%d %d",&n,&g);
+	h=n,r=n;
+	i=1;
+	while(i<=g-1)
+	{
+		h=h*r;
+		i++;
+	}
+	
+	printf("%d的%d次方是%d\n",n,g,h);
+	
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+
+
+do while 次方函數
+
+#include <stdio.h>
+#include <stdlib.h>
+int power(int, int);
+int main(void)
+{
+	int x,n;
+	
+	printf("請輸入你要計算的次方:",(x,n));
+	scanf("%d%d",&x,&n);
+	printf("%d的%d次方是%d\n",x,n,power(x,n));
+	
+	system("pause");
+	return 0;
+}
+
+
+int power(int base, int n)
+{
+	int i,pow=1.0;
+	i=1;
+	do
+	{
+		pow=pow*base;
+		i++;
+	}
+	while(i<=n);
+	return pow;
+}

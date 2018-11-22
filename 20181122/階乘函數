@@ -1,0 +1,59 @@
+C
+
+for函數階乘
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	int z;
+	printf("請輸入要計算的階層:");
+	scanf("%d",&z);
+	int total = 1;
+	int i = 2;
+	for(i = 2;i<=z; i++) 
+	{
+		total *= i;
+	} 
+	printf("%d!為%d\n",z,total);
+	return total;
+}
+
+while階乘
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	int z;
+	printf("請輸入要計算的階層:");
+	scanf("%d",&z);
+	int total = 1;
+	int i = 2;
+	while(i<=z) 
+	{
+		total *= i;
+		i++;
+	} 
+	printf("%d!為%d\n",z,total);
+	return total;
+}
+
+do while
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	int z;
+	printf("請輸入要計算的階層:");
+	scanf("%d",&z);
+	int total = 1;
+	int i = 2;
+	do {
+		total *= i;
+		i++;
+	} while (i <= z);
+	printf("%d!為%d\n",z,total);
+	return total;
+}

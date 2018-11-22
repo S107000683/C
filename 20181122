@@ -39,8 +39,6 @@ void main()
 	    system("pause");
 	    return 0;
 			   
-			   
-	
 }
 
 do while迴圈

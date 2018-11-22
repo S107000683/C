@@ -42,3 +42,23 @@ void main()
 }
 
 do while迴圈
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void main()
+{
+	int x = 1;
+	int i = 1;
+	int y = 1;
+	    do
+	       {
+	       	x += 4;
+	       	y = y + x;
+	       	i++;
+	       }while(i<=100);
+	    printf("1+5+9+...+401=%d\n",y);
+	    system("pause");
+	    return 0;
+	
+}

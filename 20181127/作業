@@ -1,0 +1,5 @@
+$_SERVER[]是甚麼?     是一個包含了諸如頭信息(header).路徑(path).腳本位置(script locations)
+$_SERVER['PHP_AUTH_USER']會傳回甚麼資料?  用戶输入的用户名
+$_SERVER['PHP_AUTH_PW']會傳回甚麼資料?    用户输入的密碼
+isset()函式的功能?  檢查變數.陣列
+WWW-Authenticate是甚麼? Basic vs Digest ?

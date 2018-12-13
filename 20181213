@@ -1,0 +1,96 @@
+#20181213
+
+
+
+/* prog10_2, 指標變數的宣告 */
+#include <stdio.h> 
+#include <stdlib.h>
+int main(void)
+{
+   int *ptr,d=100,num=20,c=33;	/* 宣告變數num與指標變數ptr */
+
+   ptr=&num;			/* 將num的位址設給指標ptr存放 */
+   printf("num=%d, num的位址=%p\n",num,&num); 
+   printf("*ptr=%d, ptr=%p, &ptr=%p\n",*ptr,ptr,&ptr); 
+   ptr=&c;
+   printf("c=%d, c的位址=%p\n",c,&c); 
+   printf("*ptr=%d, ptr=%p, &ptr=%p\n",*ptr,ptr,&ptr); 
+   ptr=&d;
+   printf("d=%d, d的位址=%p\n",num,&num); 
+   printf("*ptr=%d, ptr=%p, &ptr=%p\n",*ptr,ptr,&ptr); 
+   
+   system("pause");
+   return 0;
+}
+
+執行結果
+
+num=20, num的位址=000000000062FE40
+*ptr=20, ptr=000000000062FE40, &ptr=000000000062FE48
+c=33, c的位址=000000000062FE3C
+*ptr=33, ptr=000000000062FE3C, &ptr=000000000062FE48
+d=20, d的位址=000000000062FE40
+*ptr=100, ptr=000000000062FE44, &ptr=000000000062FE48
+請按任意鍵繼續 . . .
+
+
+假如 c存放的位址是000000000062FE3C
+請問你 
+[1]d的位址為何?
+[2]num的位址為何?
+[3]ptr的位址為何?
+
+
+練習一
+
+#include <stdio.h> 
+#include <stdlib.h>
+int main(void)
+{
+
+/*1:宣告一個整數變數,名稱叫myint出值設定為30 */
+
+   int __myint__=__30__;      
+   
+/*2:宣告一個指向整數的指標變數,名稱叫myptr */
+   int ____*myptr_____;	
+
+/* 3:將myint的位址存在myptr指標變數 */
+   _______=_____;		
+   
+/* 4.印出myint的位址與所儲存的值 */
+   printf("myint整數變數值=____%d____, "myint的位址=&myint=__%p__\n",___myint____,___&myint___);
+
+/* 5.印出myptr的位址與所儲存的值及*ptr的值 */
+   printf("*myptr=__%d__, myptr=__%p__, &myptr=__%p__\n",__*myptr__,__myptr___,___&myptr___); 
+   system("pause");
+   return 0;
+}
+
+_________________________________________________________________________________________________________________
+
+/* prog10_5, 指標的操作練習 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int a=5,b=10;
+   int *ptr1,*ptr2;
+   ptr1=&a;				/* 將ptr1設為a的位址 */
+   ptr2=&b;			 	/* 將ptr2設為b的位址 */
+   *ptr1=7;			 	/* 將ptr1指向的內容設為7 */
+   *ptr2=32;				/* 將ptr2指向的內容設為32 */
+   a=17;			 	/* 設定a為17 */
+   ptr1=ptr2;		 	/* 設定ptr1=ptr2 */
+   *ptr1=9;		 	 	/* 將ptr1指向的內容設為9 */	
+   ptr1=&a;		 	 	/* 將ptr1設為a的位址 */
+   a=64;            		/* 設定a為64 */
+   *ptr2=*ptr1+5; 	 	/* 將ptr2指向的內容設為*ptr1+5*/
+   ptr2=&a;		 		/* 將ptr2設為a的位址 */
+   
+   printf("a=%2d, b=%2d, *ptr1=%2d, *ptr2=%2d\n",a,b,*ptr1,*ptr2);
+   printf("ptr1=%p, ptr2=%p\n",ptr1,ptr2);   
+   printf("ptr1=%p, ptr2=%p\n",&ptr1,&ptr2);   
+   system("pause");
+   return 0;
+}

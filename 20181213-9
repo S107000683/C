@@ -1,0 +1,43 @@
+ /* prog9_2, 一維陣列的基本操作(錯誤的示範) */ 
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int i,score[4]; 	/* 宣告整數變數i與整數陣列score */
+   
+   score[0]=78;		
+   score[1]=55; 		
+   /* score[2]=92;  此行刻意不將score[2]設值 */
+   score[3]=80; 		
+   
+   for(i=0;i<=20;i++)	/* 此行刻意將索引值超出陣列score的可容許範圍 */
+      printf("score[%d]=%d\n",i,score[i]);  
+   
+   system("pause");
+   return 0;
+}
+
+
+執行結果
+score[0]=78
+score[1]=55
+score[2]=50
+score[3]=80
+score[4]=0
+score[5]=0
+score[6]=1
+score[7]=7
+score[8]=12456832
+score[9]=0
+score[10]=4199400
+score[11]=0
+score[12]=0
+score[13]=0
+score[14]=50
+score[15]=0
+score[16]=4225568
+score[17]=0
+score[18]=0
+score[19]=0
+score[20]=0
+請按任意鍵繼續 . . .
